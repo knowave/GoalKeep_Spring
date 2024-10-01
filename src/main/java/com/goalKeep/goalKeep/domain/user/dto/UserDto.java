@@ -1,5 +1,6 @@
 package com.goalKeep.goalKeep.domain.user.dto;
 
+import com.goalKeep.goalKeep.domain.user.entity.User;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.NotEmpty;
@@ -31,5 +32,18 @@ public class UserDto {
 
         // 프로필 이미지는 선택 사항이라 nullable 하게 처리.
         private String profileImage;
+
+        public User toEntity() {
+            User user = User.builder()
+                    .email(email)
+                    .nickname(nickname)
+                    .password(password)
+                    .phoneNumber(phoneNumber)
+                    .introduction(introduction)
+                    .profileImage(profileImage)
+                    .build();
+
+            return user;
+        }
     }
 }
