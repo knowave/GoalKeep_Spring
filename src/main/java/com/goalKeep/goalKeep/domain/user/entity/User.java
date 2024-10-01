@@ -1,4 +1,4 @@
-package com.goalKeep.goalKeep.domain.user;
+package com.goalKeep.goalKeep.domain.user.entity;
 
 import com.goalKeep.goalKeep.BaseEntity;
 import jakarta.persistence.Column;
