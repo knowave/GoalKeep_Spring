@@ -3,9 +3,15 @@ package com.goalKeep.goalKeep.domain.user.entity;
 import com.goalKeep.goalKeep.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
+@Getter
 @Entity()
 public class User extends BaseEntity {
 
