@@ -15,7 +15,7 @@ public class UserService {
     private final PasswordEncoder encoder;
 
     public void createUser(UserDto.Request createUserDto) {
-        if (userRepository.existByEmail(createUserDto.getEmail())) {
+        if (userRepository.existsByEmail(createUserDto.getEmail())) {
             throw new CustomException("이미 존재하는 이메일입니다.", HttpStatus.BAD_REQUEST);
         }
 
