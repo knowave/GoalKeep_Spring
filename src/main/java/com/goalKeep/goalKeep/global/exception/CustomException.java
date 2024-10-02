@@ -1,4 +1,4 @@
-package com.goalKeep.goalKeep.global;
+package com.goalKeep.goalKeep.global.exception;
 
 import org.springframework.http.HttpStatus;
 
