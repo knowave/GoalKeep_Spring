@@ -13,8 +13,6 @@ import java.util.Date;
 public class JwtProvider {
 
     private final SecretKey secretKey;
-    private final Long accessTokenExpirationMs;
-    private final Long refreshTokenExpirationMs;
 
     private JwtProvider(@Value("${jwt.secret}") String secret, @Value("${jwt.access-token-expiration}") Long accessTokenExpirationMs, @Value("${jwt.refresh-token-expiration}") Long refreshTokenExpirationMs) {
 
